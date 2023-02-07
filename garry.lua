@@ -37,7 +37,7 @@ if SERVER then
 
 
 
-concommand.Add("penis_bot", function( ply, cmd, args ) 
+concommand.Add("penis_bot_spammer", function( ply, cmd, args ) 
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
 
     timer.Simple(.1,function()
