@@ -40,6 +40,19 @@ end
 
 
 
+
+if SERVER then
+	
+concommand.Add("penis_badmin_tellall", function()
+    for i = 1, 5 do
+        RunConsoleCommand("ba", "tellall", text)
+      end
+   end)
+end
+
+	
+	
+	
 if SERVER then
 
 concommand.Add("penis_crash_server", function( ply, cmd, args ) 
